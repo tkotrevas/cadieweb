@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Registre-se</title>
+		<title>Excluir Aluno</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -37,7 +37,7 @@
 							<h2>Excluir Aluno:</h2>						
 						</header>
 						<div class="content">
-							<form method="post" action="processa_cad_usuario.php">
+							<form method="post" action="processa_excluir_aluno.php">
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall)">
 										

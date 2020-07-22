@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Registre-se</title>
+		<title>Adicionar Professor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -37,10 +37,10 @@
 							<h2>Adicionar Professor(a):</h2>						
 						</header>
 						<div class="content">
-							<form method="post" action="processa_cad_usuario.php">
+							<form method="post" action="processa_cad_prof.php">
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall)">
-										<input type="text" name="nome" id="name" value="" placeholder="Nome" />
+										<input type="text" name="nome" id="nome" value="" placeholder="Nome" />
 										<p></p>
 										<input type="text" name="materia" id="materia" value="" placeholder="Matéria" />
 										<p></p>

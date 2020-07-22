@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Pesquisa - Aventuras Internacionais</title>
+		<title>Feedback</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />

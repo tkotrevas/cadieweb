@@ -40,7 +40,7 @@
 										<input type="text" name="cnpj" id="cnpj" value="" placeholder="CNPJ"/>
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-										<input type="text" name="senha" id="senha" value="" placeholder="Senha" />
+										<input type="password" name="senha" id="senha" value="" placeholder="Senha" />
 										</div>
 										<div class="6u$ 12u$(medium)">
 										<input type="submit" value="Enviar" class="button special">
