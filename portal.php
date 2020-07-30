@@ -2,6 +2,18 @@
 
 <html>
 	<head>
+		<?php
+session_start();
+if((!isset ($_SESSION['cnpj']) == true) and (!isset ($_SESSION['senha']) == true))
+{
+  unset($_SESSION['cnpj']);
+  unset($_SESSION['senha']);
+  header('location:login.php');
+  }
+
+$logado = $_SESSION['cnpj'];
+
+?>
 		<title>PORTAL</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,7 +51,7 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="image" onclick="location.href='perfil.php';"src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Settings-5-512.png" alt="Submit" width="200" height="200">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="image" onclick="location.href='';"src="https://cordisburgo.cam.mg.gov.br/wp-content/uploads/2018/05/flaticon-relatorio-personalizado-1-e1530813304442.png" alt="Submit" width="200" height="200">
+						<input type="image" onclick="location.href='alunoprof3.php';"src="https://cordisburgo.cam.mg.gov.br/wp-content/uploads/2018/05/flaticon-relatorio-personalizado-1-e1530813304442.png" alt="Submit" width="200" height="200">
 						<BR>
 						GESTÃO DE CADASTROS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONFIGURAÇÕES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RELATÓRIOS
 						</div>

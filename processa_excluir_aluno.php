@@ -12,7 +12,7 @@
                 ";   
             }else{
                 echo "
-                    <script>window.location=''excluirUser.php';alert('Erro ao excluir o usuario!');</script>;
+                    <script>window.location='excluirUser.php';alert('Erro ao excluir o usuario!');</script>;
                 ";    
             }
 ?>

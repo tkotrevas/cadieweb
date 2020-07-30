@@ -4,6 +4,7 @@
     $cnpj = $_POST['cnpj'];
     $senha = $_POST['senha'];
 
+
     
     $result_usuario = "SELECT cnpj, senha FROM escola WHERE cnpj = '$cnpj' && senha = '$senha'";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
@@ -12,6 +13,7 @@
    if(mysqli_affected_rows($conn) != 0){
                $_SESSION['cnpj'] = $cnpj;
                $_SESSION['senha'] = $senha; 
+             
 
                      
                 echo "<script>window.location='portal.php';alert(' Bem vindo ao CADiE!');</script>";
@@ -24,7 +26,7 @@
                 
                     
                      
-                     echo "<script>window.location='login.php';alert('Ocorreu um erro ao efetuar logun, por favor tente novamente.');</script>";
+                     echo "<script>window.location='login.php';alert('Ocorreu um erro ao efetuar login, por favor tente novamente.');</script>";
                    
             }
 ?>
