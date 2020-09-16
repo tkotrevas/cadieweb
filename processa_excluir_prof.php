@@ -1,8 +1,10 @@
 <?php
+session_start();
     include_once("conexao.php");
    $id = $_POST['id'];
+   $escola = $_SESSION['cnpj'];
   
-    $result_usuario = "DELETE FROM professor WHERE idprofessor='$id'";
+    $result_usuario = "DELETE FROM professor WHERE idprofessor='$id' AND escola='$escola'";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
     
    if(mysqli_affected_rows($conn) != 0){

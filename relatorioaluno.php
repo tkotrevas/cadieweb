@@ -15,6 +15,9 @@ $sql = mysqli_query($conn, "SELECT * FROM aluno WHERE escola='$escola' ORDER BY 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	<style type="text/css">
+    body {
+      background-color: #000000;;
+    }
 .tg  {
 	border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -24,8 +27,10 @@ $sql = mysqli_query($conn, "SELECT * FROM aluno WHERE escola='$escola' ORDER BY 
 .tg .tg-986h{background-color:#c6dcf7;border-color:#cd9934;color:#000000;font-family:Impact, Charcoal, sans-serif !important;;
   font-size:26px;text-align:center;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg-0lax {border-color:black; text-align:left; vertical-align:top; background-color:white;color:black;}
 </style>
 </head>
+<body>
 <table class="tg" style="text-align: center;table-layout: fixed; width: 95%; border: none; margin: auto; margin-top: 70px">
 <colgroup>
 <col style="width: 186px">
@@ -61,5 +66,6 @@ while($aux = mysqli_fetch_assoc($sql)) { ?>
 <div align="center">
   <input type="button" value="Voltar" onClick="history.go(-1)">
 </div>
+</body>
 
 </html>

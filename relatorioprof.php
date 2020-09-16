@@ -61,7 +61,7 @@ while($aux = mysqli_fetch_assoc($sql)) { ?>
 </table>
 <br>
 <br>
-
+<br>
 <div align="center">
 	<input type="button" value="Voltar" onClick="history.go(-1)">
 </div>
