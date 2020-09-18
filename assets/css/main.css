@@ -3339,7 +3339,7 @@
 
 		#header.alt {
 			top: 0;
-			background: #F64747;
+			background: #2c348d;
 		}
 
 		#header .logo {
@@ -4180,10 +4180,10 @@
 /* Footer */
 
 	#footer {
-		background-color: #F64747;
-		color: #fdd1d1;
+		background-color: #2c348d;
+		color: #2c348d;
 		padding: 6em 0 4em 0;
-		background: #F64747;
+		background: #2c348d;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -4280,7 +4280,7 @@
 			#footer button.special,
 			#footer .button.special {
 				background-color: #ffffff;
-				color: #F64747 !important;
+				color: #2c348d !important;
 			}
 
 		#footer label {
@@ -4324,7 +4324,7 @@
 		#footer input[type="radio"]:checked + label:before {
 			background-color: #ffffff;
 			border-color: #ffffff;
-			color: #F64747;
+			color: #2c348d;
 		}
 
 		#footer input[type="checkbox"]:focus + label:before,

@@ -1,6 +1,8 @@
 <?php
+
     include_once("conexao.php");
    $ra = $_POST['ra'];
+   $escola = $_SESSION['cnpj'];
   
     $result_usuario = "DELETE FROM aluno WHERE ra='$ra'";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
